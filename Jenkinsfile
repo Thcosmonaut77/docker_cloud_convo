@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-       imagename = "tkibnyusuf/jan_docker_project"
-       registryCredential = 'dockerpass'
+       imagename = "trippy7/goldenimage"
+       registryCredential = 'docker-access'
        dockerImage = ''
            }
 

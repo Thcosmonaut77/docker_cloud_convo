@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'docker:20.10'   // Docker CLI image
+      args  '--privileged -v /var/run/docker.sock:/var/run/docker.sock'
+    }
+  }
 
   environment {
        imagename = "trippy7/goldenimage"

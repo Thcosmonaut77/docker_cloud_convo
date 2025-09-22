@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-       imagename = "trippy7/goldenimage"
+       imagename = "trippy7/new"
        registryCredential = 'docker-access'
        dockerImage = ''
            }
